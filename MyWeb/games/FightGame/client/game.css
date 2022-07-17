@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+}
+
+#ui {
+    position: absolute;
+}
+
+#game-images {
+    display: none;
+}
+
+#inner-game {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+#inner-game-ui {
+    position: absolute;
+    display: flex;
+    flex-basis: max-content;
+    width: 100%;
+    height: 100%;
+}
+
+#health-container {
+    position: absolute;
+    display: flex;
+    flex-basis: max-content;
+    width: 100%;
+    height: 100%;
+    padding: 2%;
+}
+
+#main-health {
+    width: 100%;
+}
+
+    #main-health .health {
+        background-image: url("./../src/ui/player-health.png");
+    }
+
+#second-health {
+    width: 100%;
+}
+
+    #second-health .health {
+        background-image: url("./../src/ui/enemy-health.png");
+    }
+
+.health-frame {
+    width: 100%;
+    height: 5%;
+    background: grey;
+}
+
+.health {
+    width: 100%;
+    height: 100%;
+    position: inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.health-name {
+    width: 100%;
+    position: relative;
+    top: -75%;
+    right: -5%;
+}
+
+.separator {
+    width: 30%;
+    height: 5%;
+}

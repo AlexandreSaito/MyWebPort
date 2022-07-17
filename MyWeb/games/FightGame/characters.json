@@ -1,0 +1,126 @@
+[
+	{
+		"default": {
+			"name": "default",
+			"imagesToLoad": [
+				{
+					"url": "/character/player-image2.png",
+					"name": "spriteSheetChar"
+				}
+			],
+			"actionImages": [
+				{
+					"nameImage": "spriteSheetChar",
+					"nameAction": "idle",
+					"direction": 1,
+					"position": {
+						"x": 1,
+						"y": 1
+					},
+					"imagePosition": {
+						"x": 0,
+						"y": 0
+					},
+					"imageWidth": 100,
+					"imageHeight": 160,
+					"drawWidth": 50,
+					"drawHeight": 100,
+					"frameHolder": 2,
+					"frameMax": 12,
+					"drawIndex": 300
+				},
+				{
+					"nameImage": "spriteSheetChar",
+					"nameAction": "walking",
+					"direction": 1,
+					"position": {
+						"x": 1,
+						"y": 1
+					},
+					"imagePosition": {
+						"x": 0,
+						"y": 0
+					},
+					"imageWidth": 100,
+					"imageHeight": 160,
+					"drawWidth": 50,
+					"drawHeight": 100,
+					"frameHolder": 2,
+					"frameMax": 12,
+					"drawIndex": 300
+				},
+				{
+					"nameImage": "spriteSheetChar",
+					"nameAction": "jumping",
+					"direction": 1,
+					"position": {
+						"x": 1,
+						"y": 1
+					},
+					"imagePosition": {
+						"x": 0,
+						"y": 0
+					},
+					"imageWidth": 100,
+					"imageHeight": 160,
+					"drawWidth": 50,
+					"drawHeight": 100,
+					"frameHolder": 2,
+					"frameMax": 12,
+					"drawIndex": 300
+				},
+				{
+					"nameImage": "spriteSheetChar",
+					"nameAction": "basic-attack",
+					"direction": 1,
+					"position": {
+						"x": 1,
+						"y": 1
+					},
+					"imagePosition": {
+						"x": 0,
+						"y": 160
+					},
+					"imageWidth": 100,
+					"imageHeight": 160,
+					"drawWidth": 50,
+					"drawHeight": 100,
+					"frameHolder": 2,
+					"frameMax": 12,
+					"drawIndex": 300
+				}
+			],
+			"skills": [
+				{
+					"nameSkill": "swing sword",
+					"nameAction": "basic-attack",
+					"width": 100,
+					"height": 50,
+					"castTime": 10,
+					"duration": 100,
+					"damage": 10,
+					"image": {
+						"nameImage": "spriteSheetSkills",
+						"nameAction": "basic-attack",
+						"direction": 1,
+						"position": {
+							"x": 0,
+							"y": 0
+						},
+						"imagePosition": {
+							"x": 0,
+							"y": 0
+						},
+						"imageWidth": 0,
+						"imageHeight": 0,
+						"drawWidth": 0,
+						"drawHeight": 0,
+						"frameHolder": 2,
+						"frameMax": 1,
+						"drawIndex": 1
+					}
+				}
+			]
+		}
+	}
+]

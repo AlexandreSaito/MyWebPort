@@ -1,0 +1,136 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>MyWeb</Name>
+    <RootNamespace>MyWeb</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>152f5123-62d2-4331-9435-c2568c2ddba2</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>server.js</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <NodejsPort>1337</NodejsPort>
+    <StartWebBrowser>true</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="dist\css\main.css" />
+    <Content Include="dist\js\main.js" />
+    <Content Include="gameServer.js" />
+    <Content Include="games\FightGame\character.js" />
+    <Content Include="games\FightGame\characters.json" />
+    <Content Include="games\FightGame\client\game-client.js" />
+    <Content Include="games\FightGame\client\game.css" />
+    <Content Include="games\FightGame\client\game.ini.js" />
+    <Content Include="games\FightGame\game.css" />
+    <Content Include="games\FightGame\game.html" />
+    <Content Include="games\FightGame\game.js" />
+    <Content Include="games\FightGame\src\ambient\bc-game.png" />
+    <Content Include="games\FightGame\src\ambient\teste.jpg" />
+    <Content Include="games\FightGame\src\character\enemy-image.png" />
+    <Content Include="games\FightGame\src\character\player-image.png" />
+    <Content Include="games\FightGame\src\character\player-image2.png" />
+    <Content Include="games\FightGame\src\controller.json" />
+    <Content Include="games\FightGame\src\ui\enemy-health.png" />
+    <Content Include="games\FightGame\src\ui\player-health.png" />
+    <Content Include="games\helpers.js" />
+    <Content Include="helpers.js" />
+    <Content Include="index.html" />
+    <Content Include="main.js" />
+    <Content Include="old\index.js" />
+    <Content Include="old\lobby.js" />
+    <Content Include="pages\index.html" />
+    <Content Include="pages\_layout.html" />
+    <Content Include="server.js" />
+    <Content Include="package.json" />
+    <Content Include="README.md" />
+    <Content Include="siteServer.js" />
+    <Content Include="games\FightGame\controller.json" />
+    <Content Include="sockets\chat-client.js" />
+    <Content Include="sockets\chat.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="sockets\fight-game-server.js" />
+    <Content Include="sockets\sockets-client.js" />
+    <Content Include="sockets\sockets.js" />
+    <Content Include="webMethods.js" />
+    <Content Include="webPages\default.js" />
+    <Content Include="webPages\fightGame.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="webPages\pages.js" />
+    <Content Include="webSocketServer.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="dist\css\" />
+    <Folder Include="dist\js\" />
+    <Folder Include="games\" />
+    <Folder Include="games\FightGame\" />
+    <Folder Include="games\FightGame\client\" />
+    <Folder Include="games\FightGame\src\" />
+    <Folder Include="games\FightGame\src\ambient\" />
+    <Folder Include="games\FightGame\src\character\" />
+    <Folder Include="games\FightGame\src\ui\" />
+    <Folder Include="dist\" />
+    <Folder Include="sockets\" />
+    <Folder Include="webPages\" />
+    <Folder Include="webMethods\" />
+    <Folder Include="temp\" />
+    <Folder Include="pages\" />
+    <Folder Include="old\" />
+    <Folder Include="old\discord\" />
+  </ItemGroup>
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

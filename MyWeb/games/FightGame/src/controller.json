@@ -1,0 +1,10 @@
+{
+	"jump": "w",
+	"moveRight": "d",
+	"moveLeft":"a",
+	"down": "s",
+	"attackBasic": " ",
+	"jump2": { 
+		"keyCode": "w",
+	},
+}

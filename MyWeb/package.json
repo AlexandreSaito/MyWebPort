@@ -1,0 +1,15 @@
+{
+  "name": "my-web",
+  "version": "0.0.0",
+  "description": "MyWeb",
+  "main": "main.js",
+  "type": "module",
+  "author": {
+    "name": ""
+  },
+  "dependencies": {
+    "socket.io": "^4.5.1",
+    "socket.io-client": "^4.5.1",
+    "ws": "^8.8.0"
+  }
+}
